@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body {
+    
+    font-family: "Poppins", sans-serif;
+    color:#3A3A3A;
+}
+
+.nav-bar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-bar>ul {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.nav-bar>ul>li {
+    list-style-type: none;
+    
+}
+
+
+.nav-bar>ul>li>a {
+    text-decoration: none;
+    margin-right:25px;
+    color: black;
+    font-weight: 500;
+    
+}
+
+header {
+    width:83.33%;
+    margin:0 auto;
+    margin-top:75px;
+}
+
+.brand>h3{
+    font-size: 1.5rem;
+    font-size: bold;
+}
+
+
+
+/* Hero Section */
+
+.hero {
+    display:flex;
+    align-items: center;
+    margin-top: 50px;
+    gap:9.23%;
+}
+
+.text-content h2 {
+    font-size: 3rem;
+}
+
+.text-content p {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top:32px;
+    margin-bottom: 36px;
+    line-height: auto;
+}
+
+.primarybtn {
+    border: none;
+    background-color:#E02C6D;
+    color:white;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    padding:10px 24px;
+    border-radius: 41px;
+
+}
+
+.arrow {
+    padding-left:8px;
+    margin-top:5px;
+}
+
+.image-content {
+    background-image: url(assets/exported/circle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:96%;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* Responsive for Mobile device */
+
+@media screen and (max-width:576px) {
+    header {
+        margin-top:45px;
+    }
+    .nav-bar, .nav-bar>ul { 
+        flex-direction: column;
+    }
+
+    .nav-bar>ul>li>a {
+        margin-bottom:10px;
+        
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        
+    }
+
+    .image-content img{
+        width:100%;
+        margin:0 auto;
+    }
+
+    .text-content h2 {
+        text-align: center;
+        font-size: 1.75rem;
+    }
+    .text-content p {
+        text-align: center;
+        font-size: 0.9 rem;
+        font-weight: 600;
+    }
+
+    .btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .primarybtn {
+        font-weight: normal;
+    }
+
+
+
+
+}
